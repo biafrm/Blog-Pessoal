@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(245, 72, 109);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: large;
+}
+  
+
+.quadradao {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto; /* Centraliza o contêiner .quadradao horizontalmente */
+}
+
+.quadro, .quadro2 {
+    background-color: rgb(243, 116, 154);
+    border-radius: 10px;
+    width: calc(50% - 20px); /* Define a largura para ocupar metade do contêiner, subtraindo a margem */
+    margin: 10px; 
+    text-indent: 2%;
+    transition: transform 0.2s ease; 
+    
+}
+
+.quadro2 {
+    background-color: rgba(88, 39, 72, 0.788);
+}
+
+img {
+    border-radius: 15px;
+    margin: auto; 
+    transition: transform 0.3s ease;
+
+}
+
+img:hover, .quadro:hover, .quadro2:hover{
+    transform: scale(1.02); 
+}
+
+ul {
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    list-style: none; /* Remove os marcadores de lista */
+}
+
+li {
+    margin-right: 20px; /* Adiciona margem à direita de cada item da lista */
+}
+
