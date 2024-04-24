@@ -21,12 +21,17 @@ body {
     width: calc(50% - 20px); /* Define a largura para ocupar metade do contêiner, subtraindo a margem */
     margin: 10px; 
     text-indent: 2%;
-    transition: transform 0.2s ease; 
+    height: 400px; /* Defina a altura desejada */
+    overflow-y: hidden;
     
 }
 
 .quadro2 {
     background-color: rgba(88, 39, 72, 0.788);
+}
+
+.quadro:hover, .quadro2:hover {
+    overflow-y: auto; /* Exibe o scroll vertical quando hover */
 }
 
 img {
@@ -36,19 +41,25 @@ img {
 
 }
 
-img:hover, .quadro:hover, .quadro2:hover{
+img:hover{
     transform: scale(1.02); 
 }
 
 ul {
-    display: flex; /* Ativa o flexbox */
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    display: flex; 
+    justify-content: center; 
     align-items: center;
-    padding: 0; /* Remove o preenchimento padrão da lista */
-    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; 
+    list-style: none; 
 }
 
 li {
     margin-right: 20px; /* Adiciona margem à direita de cada item da lista */
+}
+
+#contato {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(43, 116, 116);
 }
 
