@@ -14,7 +14,7 @@ body {
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
-    justify-content: center; /* Centralizar os quadros horizontalmente */
+    justify-content: center; 
 }
 
 .quadro, .quadro2 {
@@ -25,6 +25,12 @@ body {
     text-indent: 2%;
     height: 400px;
     color: rgb(255, 218, 185);
+}
+
+#botaofechar{
+    height: auto;
+    width: auto;
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -188,3 +194,48 @@ img:hover{
 .botao:hover {
     background-color: #0056b3;
 }
+
+
+
+
+
+
+
+
+.faq-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq-item {
+    background: white;
+    margin: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    overflow: hidden; /* Adicionado para manter tudo dentro da borda arredondada */
+}
+
+.faq-title h2 {
+    margin: 0;
+    padding: 15px 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s; 
+}
+
+.faq-title h2:hover {
+    color: rgb(248, 173, 157); 
+}
+
+.faq-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; /* Adiciona animação de transição para suavizar o expandir/recolher */
+}
+
+.toggle-sign {
+   float: right;
+}
+
