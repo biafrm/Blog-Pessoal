@@ -14,16 +14,46 @@ body {
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
+    justify-content: center; /* Centralizar os quadros horizontalmente */
 }
 
 .quadro, .quadro2 {
     background-color: rgba(240, 128, 128);
     border-radius: 10px;
-    width: calc(50% - 20px); 
-    margin: 10px; 
+    width: calc(50% - 20px);
+    margin: 10px;
     text-indent: 2%;
-    height: 400px; 
+    height: 400px;
     color: rgb(255, 218, 185);
+}
+
+@media (max-width: 768px) {
+    .quadradao {
+        width: 100%; 
+    }
+
+    .quadro, .quadro2 {
+        width: 100%;
+        margin: 10px 0; 
+    }
+
+    .texto-apresentacao{
+        font-size:small;
+    }
+    
+    #pop-up {
+        width: 80%; 
+        max-width: 300px; 
+        padding: 10px; 
+        font-size: smaller;
+        border: 1px solid rgba(240, 128, 128);
+        overflow-y: auto;
+        max-height: 70vh; 
+    }
+
+    #pop-up :hover{
+        overflow-y: auto; /*Scroll*/
+    }
 }
 
 .quadro{
