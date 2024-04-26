@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css.css">
     <link rel="icon" href="favicon.ico">
 
+    <script type="text/javascript" src="js.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
@@ -18,11 +18,10 @@
     </header>
     
     <nav>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/bianca-freire-marques-bb390825b">Linkedin</a></li> 
-            <li><a href="https://www.instagram.com/biafrm/?next=%2F">Instagram</a></li>
-            <li><a href="https://github.com/biafrm">GitHub</a></li>
-        
+        <ul class = "navbar" >
+            <li class= "redes_sociais"><a href="https://www.linkedin.com/in/bianca-freire-marques-bb390825b">Linkedin</a></li> 
+            <li class= "redes_sociais"><a href="https://www.instagram.com/biafrm/?next=%2F">Instagram</a></li>
+            <li class= "redes_sociais"><a href="https://github.com/biafrm">GitHub</a></li>
         </ul>
     </nav>
     
@@ -30,7 +29,7 @@
     <div class="tudo">
         <div class="quadradao">
             <section id="sobre" class="quadro2">
-                <h3>Currículo</h3>
+                <h3>MINHA HISTÓRIA:</h3>
                 <img src="IMG_0676.JPG" alt="Foto de Bianca Freire">
                 <p>- Curso Técnico em Informática - IFPI.(2020 - 2022)</p>
                 <p>- Análise e Desenvolvimento de Sistemas - IFPI (2023 - Em andamento)</p>
@@ -45,15 +44,33 @@
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6QL3BlIUwtoYwHOy4AyDQo?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3QKlpL?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3aogAV?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-                
             </section>
             
             <section id="interesses" class="quadro">
                 <h3>Interesses</h3>
-                <p></p>
+                <p> Clique em algum dos tópicos para saber mais: </p>
+                <ul>
+                    <li class = "topics"><a href="#" onclick="exibirPopUp('Tópico 1', event)">Tópico 1</a></li>
+                    <li class = "topics"><a href="#" onclick="exibirPopUp('Tópico 2', event)">Tópico 2</a></li>
+                    <li class = "topics"><a href="#" onclick="exibirPopUp('Tópico 3', event)">Tópico 3</a></li>
+                </ul>
             </section>
-            
+
+            <!-- Pop-up -->
+            <div id="pop-up" style="display: none;">
+                <div id="pop-up-conteudo">
+                    <h3>Currículo</h3>
+                <img src="IMG_0676.JPG" alt="Foto de Bianca Freire">
+                <p>- Curso Técnico em Informática - IFPI.(2020 - 2022)</p>
+                <p>- Análise e Desenvolvimento de Sistemas - IFPI (2023 - Em andamento)</p>
+                <p>- Estágio Caixa Econômica Federal (2022)</p>
+                <p>- Estágio Tsuru Chat (2024)</p>
+                <p>- Analista de Suporte Tsuru Chat (2024)</p>
+                </div>
+                <button onclick="fecharPopUp()">Fechar</button>
+            </div>
+            <!-- Fim do Pop-up -->
+
             <section id="hobbies" class="quadro2">
                 <h3>Hobbies</h3>
                 <p></p>
@@ -68,14 +85,14 @@
                     <label for="mensagem">Mensagem:</label><br>
                     <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
                     <a href="nada.html" class="botao">Enviar</a>
-
                 </form>
             </section>
         </div>
     </div>
-    
     <footer>
         <p>&copy; 2024 Blog da Bianca.</p>
     </footer>
+
+    
 </body>
 </html>

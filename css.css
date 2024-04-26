@@ -45,7 +45,7 @@ img:hover{
     transform: scale(1.02); 
 }
 
-ul {
+.navbar {
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -53,7 +53,7 @@ ul {
     list-style: none; 
 }
 
-li {
+.redes_sociais {
     margin-right: 20px;
 }
 
@@ -63,6 +63,47 @@ li {
     background-color: rgb(43, 116, 116);
 }
 
+#pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(243, 116, 154);
+    border-radius: 10px;
+    width: 60%; 
+    max-width: 560px;
+    padding: 20px;
+    z-index: 999;
+    display: none;
+    border: 2px solid white;
+}
+
+.fechar-botao {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.fechar-botao:hover {
+    background-color: #0056b3;
+}
+
+.topics {
+    list-style: none;
+    margin-right: 250px;
+    margin-bottom: 30px;
+    font-size: 200%;
+    color: aliceblue;
+    
+}
+
+#interesses {
+    align-items:start;
+}
 
 
 
@@ -93,7 +134,7 @@ li {
 
 .botao {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
